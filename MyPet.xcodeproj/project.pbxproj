@@ -21,6 +21,9 @@
 		860B04461AA7B12600B3D96E /* FNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B04431AA7B12600B3D96E /* FNConnection.m */; };
 		860B044D1AA7B16100B3D96E /* MPPet.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B044C1AA7B16100B3D96E /* MPPet.m */; };
 		860B04511AA7B7A600B3D96E /* pet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860B044F1AA7B7A600B3D96E /* pet@2x.png */; };
+		8621D5401AAEDA20009CE337 /* chirp1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8621D53D1AAEDA20009CE337 /* chirp1.wav */; };
+		8621D5411AAEDA20009CE337 /* chirp2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8621D53E1AAEDA20009CE337 /* chirp2.wav */; };
+		8621D5421AAEDA20009CE337 /* chirp3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8621D53F1AAEDA20009CE337 /* chirp3.wav */; };
 		86DAC3D91AAECDC600960499 /* JCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DAC3D81AAECDC600960499 /* JCMath.m */; };
 		86DAC3DB1AAED16100960499 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DAC3DA1AAED16100960499 /* bg@2x.png */; };
 		86DAC3DD1AAED29300960499 /* block@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DAC3DC1AAED29300960499 /* block@2x.png */; };
@@ -66,6 +69,9 @@
 		860B044B1AA7B16100B3D96E /* MPPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPet.h; sourceTree = "<group>"; };
 		860B044C1AA7B16100B3D96E /* MPPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPet.m; sourceTree = "<group>"; };
 		860B044F1AA7B7A600B3D96E /* pet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pet@2x.png"; sourceTree = "<group>"; };
+		8621D53D1AAEDA20009CE337 /* chirp1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chirp1.wav; sourceTree = "<group>"; };
+		8621D53E1AAEDA20009CE337 /* chirp2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chirp2.wav; sourceTree = "<group>"; };
+		8621D53F1AAEDA20009CE337 /* chirp3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chirp3.wav; sourceTree = "<group>"; };
 		86DAC3D71AAECDC600960499 /* JCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMath.h; sourceTree = "<group>"; };
 		86DAC3D81AAECDC600960499 /* JCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMath.m; sourceTree = "<group>"; };
 		86DAC3DA1AAED16100960499 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
@@ -186,6 +192,7 @@
 		860B044E1AA7B7A600B3D96E /* media */ = {
 			isa = PBXGroup;
 			children = (
+				8621D53C1AAEDA20009CE337 /* sounds */,
 				86DAC3DE1AAED68D00960499 /* symbol1@2x.png */,
 				86DAC3DF1AAED68D00960499 /* symbol2@2x.png */,
 				86DAC3E01AAED68D00960499 /* symbol3@2x.png */,
@@ -194,6 +201,16 @@
 				860B044F1AA7B7A600B3D96E /* pet@2x.png */,
 			);
 			path = media;
+			sourceTree = "<group>";
+		};
+		8621D53C1AAEDA20009CE337 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8621D53D1AAEDA20009CE337 /* chirp1.wav */,
+				8621D53E1AAEDA20009CE337 /* chirp2.wav */,
+				8621D53F1AAEDA20009CE337 /* chirp3.wav */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,12 +296,15 @@
 				86DAC3E31AAED68D00960499 /* symbol3@2x.png in Resources */,
 				860B04511AA7B7A600B3D96E /* pet@2x.png in Resources */,
 				860B041F1AA7A8ED00B3D96E /* LaunchScreen.xib in Resources */,
+				8621D5421AAEDA20009CE337 /* chirp3.wav in Resources */,
+				8621D5411AAEDA20009CE337 /* chirp2.wav in Resources */,
 				860B041C1AA7A8ED00B3D96E /* Images.xcassets in Resources */,
 				86DAC3E21AAED68D00960499 /* symbol2@2x.png in Resources */,
 				86DAC3DD1AAED29300960499 /* block@2x.png in Resources */,
 				86DAC3DB1AAED16100960499 /* bg@2x.png in Resources */,
 				860B041A1AA7A8ED00B3D96E /* Main.storyboard in Resources */,
 				86DAC3E11AAED68D00960499 /* symbol1@2x.png in Resources */,
+				8621D5401AAEDA20009CE337 /* chirp1.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
