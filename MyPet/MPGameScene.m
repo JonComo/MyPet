@@ -12,7 +12,8 @@
 
 @interface MPGameScene ()
 
-@property (nonatomic, strong) MPPet *pet;
+@property (nonatomic, strong) NSMutableArray *pets;
+
 @property (nonatomic, weak) SKSpriteNode *nodeDragging;
 @property (nonatomic, assign) CGPoint lastDragLocation;
 
@@ -27,10 +28,16 @@
         
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:CGRectMake(0.f, 0.f, size.width, size.height)];
         
-        _pet = [[MPPet alloc] init];
-        _pet.position = CGPointMake(size.width/2.f, size.height/2.f);
-        [self addChild:_pet];
-        [_pet createNetwork];
+        self.pets = [NSMutableArray array];
+        
+        // Add some friends
+        for (int i = 0; i<3; i++) {
+            MPPet *otherPet = [MPPet new];
+            otherPet.position = CGPointMake(size.width/2.f, size.height/2.f);
+            [self addChild:otherPet];
+            [otherPet createNetwork];
+            [self.pets addObject:otherPet];
+        }
         
         //Hack - create looping animation so scene is always updated
         SKSpriteNode *loopSprite = [SKSpriteNode spriteNodeWithColor:[UIColor orangeColor] size:CGSizeMake(10, 10)];
@@ -50,7 +57,9 @@
 }
 
 - (void)update:(NSTimeInterval)currentTime {
-    [self.pet update:currentTime];
+    for (MPPet *pet in self.pets) {
+        [pet update:currentTime];
+    }
     
     if (self.nodeDragging) {
         self.nodeDragging.position = self.lastDragLocation;

@@ -32,7 +32,7 @@
         _symbol = [[SKSpriteNode alloc] initWithTexture:[SKTexture textureWithImageNamed:@"symbol"]];
         [self addChild:_symbol];
         
-        _jumpStrength = 60.f;
+        _jumpStrength = 30.f;
         
         self.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.texture.size.width/2.2f];
         _brain = [SKSpriteNode spriteNodeWithColor:[UIColor whiteColor] size:CGSizeMake(70.f, 70.f)];
@@ -61,7 +61,7 @@
 
 -(void)update:(NSTimeInterval)currentTime {
     FNNeuron *energyNeuron = self.inputNeurons[@"energy"];
-    [energyNeuron receiveImpulse:0.02f];
+    [energyNeuron receiveImpulse:0.05f];
     
     [self rollUpright];
     
