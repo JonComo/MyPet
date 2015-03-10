@@ -29,7 +29,7 @@
 -(instancetype)init {
     if (self = [super initWithTexture:[SKTexture textureWithImage:[UIImage imageNamed:@"pet"]]]) {
         // init
-        _symbol = [[SKSpriteNode alloc] initWithTexture:[SKTexture textureWithImageNamed:@"symbol"]];
+        _symbol = [[SKSpriteNode alloc] initWithTexture:[SKTexture textureWithImageNamed:[NSString stringWithFormat:@"symbol%i", arc4random()%3+1]]];
         [self addChild:_symbol];
         
         _jumpStrength = 30.f;
