@@ -36,6 +36,14 @@
         SKSpriteNode *loopSprite = [SKSpriteNode spriteNodeWithColor:[UIColor orangeColor] size:CGSizeMake(10, 10)];
         [self addChild:loopSprite];
         [loopSprite runAction:[SKAction repeatActionForever:[SKAction rotateByAngle:0.1 duration:1]]];
+        
+        //Add some toys
+        for (int i = 0; i<10; i++) {
+            SKSpriteNode *block = [[SKSpriteNode alloc] initWithColor:[UIColor yellowColor] size:CGSizeMake(40.f, 40.f)];
+            block.position = CGPointMake(size.width/2.f, size.height/2.f);
+            [self addChild:block];
+            block.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:block.size];
+        }
     }
     
     return self;

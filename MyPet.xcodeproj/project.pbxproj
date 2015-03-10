@@ -21,7 +21,8 @@
 		860B04461AA7B12600B3D96E /* FNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B04431AA7B12600B3D96E /* FNConnection.m */; };
 		860B044D1AA7B16100B3D96E /* MPPet.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B044C1AA7B16100B3D96E /* MPPet.m */; };
 		860B04511AA7B7A600B3D96E /* pet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 860B044F1AA7B7A600B3D96E /* pet@2x.png */; };
-		860B04551AA7BB7200B3D96E /* JCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 860B04541AA7BB7200B3D96E /* JCMath.m */; };
+		86DAC3D61AAECDAD00960499 /* symbol@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86DAC3D51AAECDAD00960499 /* symbol@2x.png */; };
+		86DAC3D91AAECDC600960499 /* JCMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DAC3D81AAECDC600960499 /* JCMath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,9 @@
 		860B044B1AA7B16100B3D96E /* MPPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPet.h; sourceTree = "<group>"; };
 		860B044C1AA7B16100B3D96E /* MPPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPet.m; sourceTree = "<group>"; };
 		860B044F1AA7B7A600B3D96E /* pet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pet@2x.png"; sourceTree = "<group>"; };
-		860B04531AA7BB7200B3D96E /* JCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCMath.h; path = ../../../../Dropbox/Development/JCMath.h; sourceTree = "<group>"; };
-		860B04541AA7BB7200B3D96E /* JCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCMath.m; path = ../../../../Dropbox/Development/JCMath.m; sourceTree = "<group>"; };
+		86DAC3D51AAECDAD00960499 /* symbol@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol@2x.png"; sourceTree = "<group>"; };
+		86DAC3D71AAECDC600960499 /* JCMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMath.h; sourceTree = "<group>"; };
+		86DAC3D81AAECDC600960499 /* JCMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +106,9 @@
 		860B04081AA7A8ED00B3D96E /* MyPet */ = {
 			isa = PBXGroup;
 			children = (
-				860B04531AA7BB7200B3D96E /* JCMath.h */,
-				860B04541AA7BB7200B3D96E /* JCMath.m */,
 				860B044E1AA7B7A600B3D96E /* media */,
+				86DAC3D71AAECDC600960499 /* JCMath.h */,
+				86DAC3D81AAECDC600960499 /* JCMath.m */,
 				860B040D1AA7A8ED00B3D96E /* AppDelegate.h */,
 				860B040E1AA7A8ED00B3D96E /* AppDelegate.m */,
 				860B04181AA7A8ED00B3D96E /* Main.storyboard */,
@@ -176,6 +178,7 @@
 		860B044E1AA7B7A600B3D96E /* media */ = {
 			isa = PBXGroup;
 			children = (
+				86DAC3D51AAECDAD00960499 /* symbol@2x.png */,
 				860B044F1AA7B7A600B3D96E /* pet@2x.png */,
 			);
 			path = media;
@@ -264,6 +267,7 @@
 				860B04511AA7B7A600B3D96E /* pet@2x.png in Resources */,
 				860B041F1AA7A8ED00B3D96E /* LaunchScreen.xib in Resources */,
 				860B041C1AA7A8ED00B3D96E /* Images.xcassets in Resources */,
+				86DAC3D61AAECDAD00960499 /* symbol@2x.png in Resources */,
 				860B041A1AA7A8ED00B3D96E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +290,7 @@
 				860B04451AA7B12600B3D96E /* FNNeuron.m in Sources */,
 				860B04361AA7AAB600B3D96E /* MPMenuViewController.m in Sources */,
 				860B04441AA7B12600B3D96E /* FNNetwork.m in Sources */,
-				860B04551AA7BB7200B3D96E /* JCMath.m in Sources */,
+				86DAC3D91AAECDC600960499 /* JCMath.m in Sources */,
 				860B040C1AA7A8ED00B3D96E /* main.m in Sources */,
 				860B04461AA7B12600B3D96E /* FNConnection.m in Sources */,
 				860B044D1AA7B16100B3D96E /* MPPet.m in Sources */,
@@ -482,6 +486,7 @@
 				860B04301AA7A8ED00B3D96E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		860B04311AA7A8ED00B3D96E /* Build configuration list for PBXNativeTarget "MyPetTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				860B04331AA7A8ED00B3D96E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

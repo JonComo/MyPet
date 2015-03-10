@@ -18,6 +18,7 @@
 @property (nonatomic, strong) FNNetwork *network;
 
 @property (nonatomic, strong) SKSpriteNode *brain;
+@property (nonatomic, strong) SKSpriteNode *symbol;
 
 @property (nonatomic, assign) CGFloat jumpStrength;
 
@@ -28,12 +29,14 @@
 -(instancetype)init {
     if (self = [super initWithTexture:[SKTexture textureWithImage:[UIImage imageNamed:@"pet"]]]) {
         // init
+        _symbol = [[SKSpriteNode alloc] initWithTexture:[SKTexture textureWithImageNamed:@"symbol"]];
+        [self addChild:_symbol];
         
         _jumpStrength = 60.f;
         
-        self.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.texture.size.width];
-        _brain = [SKSpriteNode spriteNodeWithColor:[UIColor whiteColor] size:CGSizeMake(100.f, 100.f)];
-        [self addChild:_brain];
+        self.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.texture.size.width/2.2f];
+        _brain = [SKSpriteNode spriteNodeWithColor:[UIColor whiteColor] size:CGSizeMake(70.f, 70.f)];
+        //[self addChild:_brain];
     }
     
     return self;
@@ -62,9 +65,9 @@
     
     [self rollUpright];
     
-    self.brain.texture = [SKTexture textureWithImage:[self.network renderWithSize:CGSizeMake(100, 100)]];
-    self.brain.zRotation = -self.zRotation;
-    self.brain.position = [JCMath pointFromPoint:CGPointZero pushedBy:100.f inDirection:-self.zRotation];
+    self.symbol.zRotation = -self.zRotation + self.physicsBody.angularVelocity * 0.2f;
+    //self.brain.texture = [SKTexture textureWithImage:[self.network renderWithSize:CGSizeMake(70, 70)]];
+    //self.brain.zRotation = -self.zRotation;
 }
 
 - (void)rollUpright {
